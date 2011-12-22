@@ -30,7 +30,7 @@ limitations under the License.
 <body>
 <h1>Step Graphics</h1>
 
-<p id="intro">This simple program was inspired by problems that my daughter was solving
+<p id="intro">This very simple program was inspired by problems that my daughter was solving
 at the <a href="http://math.stanford.edu/circle/smcelem.php">Stanford Math Circle Elementary</a>
 in Fall 2011.
 <br/><a href="#" id="hide-intro">Hide</a>
@@ -44,8 +44,6 @@ after each step.
 </p>
 
 <canvas id="canvas" width="300" height="300"></canvas>
-
-<p><a href="#" id="run-button">Run program</a></p>
 
 <p><textarea id="input-steps" rows="10" cols="50">
 left 10; up 40; right 20; down 15
@@ -181,7 +179,6 @@ jQuery('#hide-instructions').click(function () {
 jQuery('#hide-intro').click(function () {
       jQuery('#intro').slideUp();
     });
-jQuery('#run-button').click(executeProgramFromTextBox);
 jQuery('#input-steps').keyup(executeProgramFromTextBox);
 jQuery('#example-two').click(function () {
       jQuery('#input-steps').val('R 1; D 2; L 3; U 4; R 5; D 6; L 7; U 8; R 9; D 10; L 11; U 12');
